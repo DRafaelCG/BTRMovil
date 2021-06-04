@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Informacion"
+    tools:ignore="NewApi" 
+    android:background="@drawable/backgroundgray">
+
+	<TextView
+	    android:id="@+id/tVIcoCSI"
+	    android:layout_width="130dp"
+	    android:layout_height="35dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="30dp"
+	    android:background="@drawable/logocsihzl"
+	    android:text="" />
+
+	<TextView
+	    android:id="@+id/tVInfCorreo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/tVInformacion2"
+	    android:layout_alignRight="@+id/tVInformacion2"
+	    android:layout_below="@+id/tVInformacion2"
+	    android:text="@string/tvInfCorreo"
+	    android:textColor="#FF1300"
+   	    android:textStyle="bold" />
+
+   	<TextView
+   	    android:id="@+id/tVInformacion2"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignLeft="@+id/tVInformacion"
+   	    android:layout_alignRight="@+id/tVInformacion"
+   	    android:layout_below="@+id/tVInformacion_c"
+   	    android:layout_marginTop="15dp"
+   	    android:text="@string/textInf2"/>
+
+   	<TextView
+   	    android:id="@+id/titleinformacion"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentTop="true"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_marginTop="60dp"
+   	    android:text="@string/titleInformacion"
+   	    android:textColor="#a80000"
+   	    android:textSize="20sp" />
+
+   	<TextView
+   	    android:id="@+id/tVInformacion"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_below="@+id/titleinformacion"
+   	    android:layout_marginLeft="30dp"
+   	    android:layout_marginRight="30dp"
+   	    android:layout_marginTop="30dp"
+   	    android:text="@string/textInformacion"/>
+
+   	<TextView
+   	    android:id="@+id/tVTel1"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignLeft="@+id/tVInformacion"
+   	    android:layout_below="@+id/tVInformacion"
+   	    android:layout_marginLeft="5dp"
+   	    android:text="@string/tVTel1"
+   	    android:textColor="#FF1300"
+   	    android:textStyle="bold" />
+
+   	<TextView
+   	    android:id="@+id/icoInformacion"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignTop="@+id/titleinformacion"
+   	    android:layout_marginRight="20dp"
+   	    android:layout_toLeftOf="@+id/titleinformacion"
+   	    android:background="@drawable/info20x20_s2" />
+
+   	<TextView
+   	    android:id="@+id/tVInformacion_b"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignLeft="@+id/tVInformacion"
+   	    android:layout_below="@+id/tVTel1"
+   	    android:text="@string/textInformacion_b" />
+
+   	<TextView
+   	    android:id="@+id/tVInformacion_c"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignLeft="@+id/tVInformacion_b"
+   	    android:layout_below="@+id/tVInformacion_b"
+   	    android:text="@string/textInformacion_c"/>
+
+   	<TextView
+   	    android:id="@+id/tVTel2"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignBaseline="@+id/tVInformacion_b"
+   	    android:layout_alignBottom="@+id/tVInformacion_b"
+   	    android:layout_marginLeft="2dp"
+   	    android:layout_toRightOf="@+id/tVInformacion_b"
+   	    android:text="@string/tVTel2"
+   	    android:textColor="#FF1300"
+   	    android:textStyle="bold" />
+   	
+</RelativeLayout>

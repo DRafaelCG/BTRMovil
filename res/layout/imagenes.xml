@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="UselessParent">
+    <!--android:background="@drawable/background_modificado"-->
+    <RelativeLayout
+        android:id="@+id/rLImagenes"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_list"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <View
+            android:id="@+id/vDivision2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#e3e3e3" />
+
+        <ImageView
+            android:id="@+id/iVimg1"
+            style="@style/myImageView"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/vDivision2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/descImg1"
+            android:scaleType="fitXY" 
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"/>
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/stylebtnseliminaritem"
+            android:text="@string/btnEliminar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/vDivision"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iVimg1"
+            android:layout_marginTop="5dp"
+            android:background="#e3e3e3" />
+    </RelativeLayout>
+</LinearLayout>

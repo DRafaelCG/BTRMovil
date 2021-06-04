@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login" 
+    android:id="@+id/rLayoutLogin"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/edusuario"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/textHintUser"
+        android:inputType="textPersonName"
+        android:minHeight="42dp"
+        android:minWidth="240dp"
+        android:nextFocusForward="@+id/edpassword"
+        android:paddingLeft="20dp"
+        android:singleLine="true">
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/edpassword"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edusuario"
+        android:layout_below="@+id/edusuario"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:ems="10"
+        android:hint="@string/textHintPwd"
+        android:inputType="textPassword"
+        android:minHeight="42dp"
+        android:minWidth="240dp"
+        android:paddingLeft="20dp"
+        android:singleLine="true">
+
+    </EditText>
+
+	<!--<TextView
+	    android:id="@+id/tVGuardaUsuario"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/edpassword"
+	    android:layout_below="@+id/edpassword"
+	    android:layout_marginTop="25dp"
+	    android:text="@string/switchNameUser"
+	    android:textSize="16sp" />
+
+	<ToggleButton
+	    android:id="@+id/tBGuardaUsuario"
+	    android:layout_width="60dp"
+	    android:layout_height="40dp"
+	    android:layout_alignBaseline="@+id/tVGuardaUsuario"
+	    android:layout_alignBottom="@+id/tVGuardaUsuario"
+	    android:layout_alignRight="@+id/edpassword"
+	    android:background="@drawable/stylebyttonswitch"
+	    android:textOff="@string/switchOff"
+	    android:textOn="@string/switchOn" />
+-->
+
+	<Button
+	    android:id="@+id/btnLogin"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:layout_alignLeft="@+id/edpassword"
+	    android:layout_alignRight="@+id/edpassword"
+	    android:layout_below="@+id/edpassword"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/stylebtns"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:minHeight="42dip"
+	    android:minWidth="240dip"
+	    android:text="@string/btnLogin"
+	    android:textColor="#ff1300"
+	    android:textSize="16sp" />
+
+	<!-- <Button
+	    android:id="@+id/btnCancelarLogin"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:layout_alignLeft="@+id/btnLogin"
+	    android:layout_alignRight="@+id/btnLogin"
+	    android:layout_below="@+id/btnLogin"
+	    android:layout_marginTop="15dp"
+	    android:background="@drawable/stylebtns"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:minHeight="42dip"
+	    android:minWidth="240dip"
+	    android:text="@string/btnCancelarLogin"
+	    android:textColor="#ff1300"
+	    android:textSize="16sp" />-->
+    
+</RelativeLayout>

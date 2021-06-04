@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="SelectableText,SmallSp">
+	<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="4dp" >
+
+        <TextView
+            android:id="@+id/idReg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="3dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLdatosGuardados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_list"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/tVNombreCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/tVNombreCliente"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tVNombreCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tVNombreCliente"
+            android:layout_alignTop="@+id/tVNombreCliente"
+            android:layout_alignLeft="@+id/tVProductoSeleccionado"
+            android:layout_toRightOf="@+id/tVNombreCliente"
+            android:textSize="14sp" 
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tVRFCCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVNombreCliente"
+            android:layout_below="@+id/tVNombreCliente"
+            android:layout_marginTop="10dp"
+            android:text="@string/tVRFCCliente"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVRFCCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tVRFCCliente"
+            android:layout_alignLeft="@+id/tVProductoSeleccionado"
+            android:layout_alignTop="@+id/tVRFCCliente"
+            android:layout_toRightOf="@+id/tVRFCCliente"
+            android:textSize="14sp" />
+
+		<TextView
+		    android:id="@+id/tVProductoCliente"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/tVRFCCliente"
+		    android:layout_below="@+id/tVRFCCliente"
+		    android:layout_marginTop="10dp"
+		    android:text="@string/tVProductoUpper"
+		    android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVProductoSeleccionado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tVProductoCliente"
+            android:layout_alignTop="@+id/tVProductoCliente"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVProductoCliente"
+            android:textSize="14sp" />
+
+        <TextView
+		    android:id="@+id/tVIds"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/tVProductoCliente"
+		    android:layout_below="@+id/tVProductoCliente"
+		    android:layout_marginTop="10dp"
+		    android:text="@string/tVIds"
+		    android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVNoIds"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tVIds"
+            android:layout_alignTop="@+id/tVIds"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVIds"
+            android:text="" 
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <!-- 
+        <TextView
+		    android:id="@+id/tVIdentCliente"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/tVSolicitudCliente"
+		    android:layout_below="@+id/tVSolicitudCliente"
+		    android:layout_marginTop="10dp"
+		    android:text="@string/tVIdentCliente"
+		    android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tVEtiquetaIdentificacionOK"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tVIdentCliente"
+            android:layout_alignTop="@+id/tVIdentCliente"
+            android:layout_toRightOf="@+id/tVEtiquetaSolicitudOK"
+            android:layout_alignLeft="@+id/tVEtiquetaCompDomOK"
+            android:background="@drawable/nocargados"
+            android:text="" />
+		<TextView
+		    android:id="@+id/tVCompIngCliente"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/tVIdentCliente"
+		    android:layout_below="@+id/tVIdentCliente"
+		    android:layout_marginTop="10dp"
+		    android:text="@string/tVICompIngCliente"
+		    android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tVEtiquetaCompIngOK"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tVCompIngCliente"
+            android:layout_alignLeft="@+id/tVEtiquetaCompDomOK"
+            android:layout_alignTop="@+id/tVCompIngCliente"
+            android:background="@drawable/nocargados"
+            android:text="" />
+        
+		<TextView
+		    android:id="@+id/tVCompDomCliente"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/tVCompIngCliente"
+		    android:layout_below="@+id/tVCompIngCliente"
+		    android:layout_marginTop="10dp"
+		    android:text="@string/tVICompDomCliente"
+		    android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tVEtiquetaCompDomOK"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tVCompDomCliente"
+            android:layout_alignTop="@+id/tVCompDomCliente"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tVCompDomCliente"
+            android:background="@drawable/nocargados"
+            android:text="" />-->
+
+        <CheckBox
+            android:id="@+id/chBitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVRFCCliente"
+            android:layout_alignBottom="@+id/tVRFCCliente"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

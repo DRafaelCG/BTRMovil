@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/grupocsi/btrmovil/PullToRefreshListView.java" />
+    </issue>
+    <issue id="ExtraTranslation" severity="ignore" />
+    <issue id="InflateParams">
+        <ignore path="src/com/grupocsi/btrmovil/PullToRefreshListView.java" />
+    </issue>
+    <issue id="Instantiatable">
+        <ignore path="src/com/grupocsi/btrmovil/CropOptionAdapter.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/grupocsi/flyoutmenu/view/FlyOutContainer.java" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/cropimage.xml" />
+    </issue>
+</lint>

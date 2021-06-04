@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff1300"
+    tools:context=".Inicio" >
+
+    <TextView
+        android:id="@+id/tVEtqBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="@string/tVEtqBienvenido"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/iVLogo"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tVEtqBienvenido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/iVLogo"
+        android:src="@drawable/logo153x64" />
+
+    <TextView
+        android:id="@+id/tVTextInicio"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iVLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/tVTextInicio"
+        android:textColor="#FFFFFF"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tVTextInicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/stylebtns"
+        android:text="@string/btnIngresar"
+        android:textColor="#FF1300" />
+
+    <TextView
+        android:id="@+id/tVTerminosYCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/tVTerminosYCond"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnInforme"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/tVTerminosYCond"
+        android:layout_alignBottom="@+id/tVTerminosYCond"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tVTerminosYCond"
+        android:background="@drawable/stylebtnsinf"
+        android:minWidth="48dp"
+        android:text="@string/btnInf" />
+
+</RelativeLayout>

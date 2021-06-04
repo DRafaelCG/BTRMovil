@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ConsultarExpedientes" 
+    android:orientation="vertical">
+	<TextView
+	    android:id="@+id/tvSinExpedientes"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@null"
+	    android:gravity="center_horizontal"
+	    android:text="@string/empty" />	
+	<com.grupocsi.btrmovil.PullToRefreshListView 
+	    android:id="@+id/gVlistExp"
+	    android:layout_width="match_parent" 
+	    android:layout_height="fill_parent" 
+		android:numColumns="1"
+    	android:horizontalSpacing="10dp"
+    	android:verticalSpacing="10dp"
+    	android:background="@drawable/background">
+	    
+	</com.grupocsi.btrmovil.PullToRefreshListView>
+</LinearLayout>

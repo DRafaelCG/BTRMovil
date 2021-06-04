@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="SelectableText,SmallSp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="4dp" >
+
+        <TextView
+            android:id="@+id/idexpediente"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="3dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLdatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_list"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/tVRevisado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_wait25x25_b"
+            android:text="@string/tVRevisado"
+            android:textSize="10sp" />
+
+        <!-- <TextView
+            android:id="@+id/documentos"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/tVDocumentacion"
+            android:layout_below="@+id/tVDocumentacion"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/docs01"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:onClick="cargaDocumentos"
+            android:paddingLeft="5dp"
+            android:text="@string/documentos"
+            android:textColor="#FFFFFF"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/estatusInterno"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/tVRevisado"
+            android:layout_below="@+id/tVRevisado"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/espera02"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:paddingLeft="5dp"
+            android:text="@string/estatusInterno"
+            android:textColor="#FFFFFF"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/estatusCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tVRevisado"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/estatusInterno"
+            android:background="@drawable/espera02"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:paddingLeft="16dp"
+            android:text="@string/estatusCliente"
+            android:textColor="#FFFFFF"
+            android:textSize="7sp" />-->
+
+        <TextView
+            android:id="@+id/folio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVNumeroTramite"
+            android:layout_below="@+id/tVNumeroTramite"
+            android:layout_marginTop="3dp"
+            android:text="@string/folio"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVNombreCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/folio"
+            android:layout_below="@+id/folio"
+            android:layout_marginTop="3dp"
+            android:text="@string/tVNombreCliente"
+            android:textSize="10sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/tVNomCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVNombreCliente"
+            android:layout_below="@+id/tVNombreCliente"
+            android:layout_marginTop="3dp"
+            android:text="@string/tVNomCliente"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVIndicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVNomCliente"
+            android:layout_below="@+id/tVNomCliente"
+            android:layout_marginTop="3dp"
+            android:text="@string/tVIndicaciones"
+            android:textSize="10sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tVIndica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVIndicaciones"
+            android:layout_below="@+id/tVIndicaciones"
+            android:layout_marginTop="3dp"
+            android:text="@string/tVIndica"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVDocumentacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tVRevisado"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_nodoc25x25"
+            android:text="@string/tVDocumentacion"
+            android:layout_marginLeft="20dp"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" 
+            android:onClick="cargaDocumentos"/>
+
+        <TextView
+            android:id="@+id/tVNumeroTramite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVDocumentacion"
+            android:layout_below="@+id/tVDocumentacion"
+            android:layout_marginTop="10dp"
+            android:text="@string/tVNumeroTramite"
+            android:textSize="10sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/tVSantander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tVRevisado"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_ok25x25"
+            android:text="@string/tVSantander"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

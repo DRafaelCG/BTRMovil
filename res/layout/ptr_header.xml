@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ptr_headerContainer"
+    tools:ignore="UselessParent" >
+
+    <RelativeLayout
+        android:id="@+id/ptr_id_header"
+        style="@style/ptr_header"
+        android:layout_width="fill_parent" >
+
+        <ImageView
+            android:id="@+id/ptr_id_image"
+            style="@style/ptr_arrow"
+            android:contentDescription="@string/imgView" />
+
+        <ProgressBar
+            android:id="@+id/ptr_id_spinner"
+            style="@style/ptr_spinner" />
+
+        <LinearLayout
+            android:id="@+id/ptr_id_textwrapper"
+            style="@style/ptr_textwrapper" >
+
+            <TextView
+                android:id="@+id/ptr_id_text"
+                style="@style/ptr_text"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/ptr_id_last_updated"
+                style="@style/ptr_last_updated"
+                android:textIsSelectable="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grupocsi.btrmovil.flyoutmenu.view.FlyOutContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+       	<LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="200dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/background_lateral"
+          android:orientation="vertical">
+		<Button
+		    android:id="@+id/btnInformacion"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center_vertical"
+		    android:onClick="opcionMenu"
+		    android:text="@string/btnInformacion"
+		    android:layout_marginTop="30dp"
+		    android:textStyle="bold"
+		    android:layout_gravity="center_vertical|left"
+		    android:layout_marginLeft="10dp"
+		    android:drawableLeft="@drawable/info_icon"
+		    android:drawablePadding="10dp"
+		    android:background="@drawable/stylebtnsmenulateral"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:textColor="#FFFFFF"/>
+		<Button
+		    android:id="@+id/btnCerrarSesion"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center_vertical"
+		    android:onClick="opcionMenu"
+		    android:text="@string/btnCerrarSesion"
+		    android:textStyle="bold"
+		    android:layout_gravity="center_vertical|left"
+		    android:layout_marginLeft="10dp"
+		    android:drawableLeft="@drawable/logout_icon"
+		    android:drawablePadding="10dp"
+		    android:background="@drawable/stylebtnsmenulateral"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:textColor="#FFFFFF"/>
+		<Button
+		    android:id="@+id/btnCerrarApp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:gravity="center_vertical"
+		    android:onClick="opcionMenu"
+		    android:text="@string/btnCerrarApp"
+		    android:textStyle="bold"
+		    android:layout_gravity="center_vertical|left"
+		    android:layout_marginLeft="10dp"
+			android:drawableLeft="@drawable/quit_icon"
+			android:drawablePadding="10dp"
+			android:background="@drawable/stylebtnsmenulateral"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:textColor="#FFFFFF"/>
+    </LinearLayout>        
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    tools:ignore="NewApi" 
+    android:background="@drawable/background">
+
+    <!-- <ImageView
+        android:id="@+id/iVLogo"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/iVLogo"
+        android:src="@drawable/logocsihzl" />-->
+
+    <!-- <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/iVLogo"
+        android:layout_marginTop="20dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnCargaSolicitud"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/stylebtns_menu"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/btnCargaSolicitud"
+                android:textColor="#DC4405"
+                android:textSize="18sp"
+                android:textStyle="bold" 
+                android:drawableRight="@drawable/arrow_forward"/>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#DC4405" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow1"
+            android:background="#DC4405" />
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/view1" >
+
+            <Button
+                android:id="@+id/btnListado"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/stylebtns_menu"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/btnListado"
+                android:textColor="#DC4405"
+                android:textSize="18sp"
+                android:textStyle="bold" 
+                android:drawableRight="@drawable/arrow_forward"/>
+
+        </TableRow>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/row2"
+            android:background="#DC4405" />
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view2" >
+
+            <Button
+                android:id="@+id/btnListadoBase"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/stylebtns_menu"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/btnListadoBase"
+                android:textColor="#DC4405"
+                android:textSize="18sp"
+                android:textStyle="bold" 
+                android:drawableRight="@drawable/arrow_forward"/>
+        </TableRow>
+		<View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/row3"
+            android:background="#DC4405" />
+    </RelativeLayout>-->
+
+	<Button
+	    android:id="@+id/btnCargaSolicitud"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="50dp"
+	    android:background="@drawable/stylebtns_registrar" />
+
+	<Button
+	    android:id="@+id/btnListado"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_alignLeft="@+id/btnCargaSolicitud"
+	    android:layout_below="@+id/btnCargaSolicitud"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/stylebtns_listado" />
+
+	<Button
+	    android:id="@+id/btnListadoBase"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_alignLeft="@+id/btnListado"
+	    android:layout_below="@+id/btnListado"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/stylebtns_listadobase" />
+
+</RelativeLayout>
+</com.grupocsi.btrmovil.flyoutmenu.view.FlyOutContainer>
